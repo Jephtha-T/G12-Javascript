@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+	var str = new String("Jephtha Tandri");
+        var name = str.bold();
+        function expand(){
+            document.getElementById("output").innerHTML = <b> "My name is Jephtha Ashter Tandri, student at PENABUR Inter Tanjung Duren" ;
+        }
+
+        function revert(){
+
+            document.getElementById("output").innerHTML = name;
+        }
+
+    </script>
+<body>
+    <p id="Title">My Autobiography</p>
+    <p id="output" onMouseOver = "expand()" onMouseOut = "revert()">Jephtha Tandri</p>
+</body>
+</html>

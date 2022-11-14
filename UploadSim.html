@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<head>
+<title>JavaScript Task</title>
+
+<style>
+h1 {font-family:serif; font-size:36px; color:#ff0000; text-align:center}
+h2 {font-family:sans-serif; font-size:24px; color:#000000; text-align:center}
+body {background-color:#FFCC00}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+</style>
+
+<script>
+
+function Countdown()
+{
+var count=-1;
+var pause=setInterval(Timer, 500); //This will call the Timer function every half second
+
+function Timer()// The timer function code is completed by adding conditional statements to display the images
+ {
+  count=count+1;
+  if (count >8)
+   {
+  clearInterval(pause); //This will stop the Interval timer calling the Timer function when the count variable==9
+	 return;
+   }  
+   
+ //The conditional statement(s) should be inserted here
+
+ 
+ 
+ }//Closure of function Timer()
+}//Closure of function Coundown()
+
+
+</script>
+
+</head>
+
+<body>
+
+<h1 style="text-align:center;"> Task 4<br>Programming for the web<br>JavaScript</h1>
+
+<br>
+
+<h1>Upload progress simulation</h1>
+
+
+<span id="timer"></span>
+<p style="text-align:center;">Click the button to start the display</p><br>
+
+<p style="text-align:center;">
+<button type="button" onClick="Countdown()">Upload</button>
+</p>
+<img src="E:\Examination_ID087_8021\Bar0.png" id="display"  alt="display here" class="center"><h2 id = "percent"></h2>
+</body>
+</html>

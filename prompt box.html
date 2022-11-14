@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<script type = "text/javascript">
+			function show_prompt(){
+				var name = prompt("Please Enter Your Name", "Your Name");
+					if (name!=null && name!=""){
+						document.write("Welcome " + name + "! Please Come In");
+					}
+					else{
+						document.write("Please reload the page and enter a valid name");
+					}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Show Prompt Box" onclick="show_prompt()">
+	</body>
+</html>

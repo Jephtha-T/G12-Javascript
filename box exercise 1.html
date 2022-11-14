@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<script type = "text/javascript">
+			function show_prompt(){
+				var name = prompt("Please Enter Your Name", "Your Name");
+					if (name!=null && name!="" && name!="Your Name"){
+						document.write("Welcome " + name + "! Please Come In");
+					}
+					else{
+						document.write("Please reload the page and enter a valid name");
+					}
+			}
+			
+			function show_confirm(){
+				var ans = confirm("Do You Want To Proceed?");
+					if (ans==true){
+						show_prompt();
+					}
+					else{
+						document.write("Thank You for Visiting, See You Soon!");
+					}
+			}
+			
+			function show_alert(){
+				alert("Welcome to the website User!");
+				show_confirm();
+			}
+		</script>
+	</head>
+	<body onload=show_alert()>
+		<!--
+		<input type="button" value="Welcome" onclick="show_alert()"> 
+		-->
+	</body>
+</html>

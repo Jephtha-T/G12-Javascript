@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<script type = "text/javascript">
+			function show_confirm(){
+				var ans = confirm("Do You Want To Proceed?");
+					if (ans==true){
+						document.write("You Have Entered Stage 2");
+					}
+					else{
+						document.write("You Are Still In Stage 1");
+					}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Show Confirm Box" onclick="show_confirm()">
+	</body>
+</html>
